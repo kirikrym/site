@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ХОЧУ... найди единомышленников</title>
+    <link rel="icon" href="логотип в верхний регистр">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+         const username = localStorage.getItem('username');
+         if (username) {
+            alert(`Добро пожаловать, ${username}!`);
+        } else {
+            alert('Добро пожаловать, гость!');
+        }
+    </script>
+    <header>
+        <div class="logo">хочу</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Поиск...">
+            <button class="search-button">
+                <img src="loupe.png" alt="Поиск">
+            </button>
+        </div>
+        <a class="login-button" href="registr.html">Вход</a>
+    </header>
+    <main class="cards">
+        <button class="card">
+            <h3>хочу гулять</h3>
+            <div class="card_text">
+                <p>Найди людей, которые хотят провести время на свежем воздухе и прогуляться по городу.</p>
+                <div class="card-icon">🌳</div>            
+            </div>
+        </button>
+        <button class="card">
+            <h3>Хочу выпить кофе</h3>   
+            <div class="card_text">
+                <p>Встречайся с людьми за чашкой кофе. Отличный способ познакомиться и пообщаться.</p>
+                <div class="card-icon">☕</div>         
+            </div>    
+        </div>
+        </button>
+        <button class="card cenz">
+            <h3>+18</h3>   
+            <div class="card_text">
+                <p>Тусовки и мероприятия для взрослых. Найди компанию для вечернего отдыха.</p>
+                <div class="card-icon">🍸</div>        
+            </div>    
+        </div>
+        </button>
+
+    </main>
+    <footer><p>Собрано при помощи:</p></footer>
+</body>
+<script src="button.js"></script>
+</html>
